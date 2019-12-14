@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<scene>
+	<string name="outputName" value="conductor.png"/>
+	<accel type="bvh"/>
+	<integrator type="normals"/>
+
+	<camera type="perspective">
+		<float name="fov" value="28.8415"/>
+		<transform name="toWorld">
+			<scale value="-1,1,1"/>
+			<lookat target="-0.694567, 4.08299, 9.85263"
+							origin="-0.729613, 4.33082, 10.8208"
+							up="0.00752155, 0.968803, -0.247718"/>
+		</transform>
+		<vector2i name="outputSize" value="800, 600"/>
+	</camera>
+
+	<sampler type="random">
+		<integer name="sampleCount" value="64"/>
+	</sampler>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/bunny2.obj"/>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/background.obj"/>
+			<bsdf type="diffuse">
+				<texture type="checkerboard">
+					<string name="parameter" value="albedo"/>
+					<color name="value0" value="0.4 0.4 0.4"/>
+					<color name="value1" value="0.2 0.2 0.2"/>
+					<vector2f name="scale" value="8.0, 8.0"/>
+				</texture>
+		</bsdf>
+	</mesh>
+</scene>

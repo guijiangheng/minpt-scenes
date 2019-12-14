@@ -7,7 +7,7 @@
 	<integrator type="normals"/>
 
 	<mesh type="obj">
-		<string name="filename" value="meshes/bunny.obj"/>
+		<string name="filename" value="meshes/bunny1.obj"/>
 	</mesh>
 
 	<camera type="perspective">
