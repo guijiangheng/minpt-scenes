@@ -1,4 +1,5 @@
 <scene>
+	<string name="outputName" value="ajax-simple.png"/>
 	<accel type="bvh"/>
 	<integrator type="path"/>
 	<sampler type="random">

@@ -1,4 +1,5 @@
 <scene>
+	<string name="outputName" value="ajax-ao.png"/>
 	<accel type="bvh"/>
 	<integrator type="ao">
 		<integer name="shadingSamples" value="32"/>
