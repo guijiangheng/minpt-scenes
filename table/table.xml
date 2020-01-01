@@ -2,7 +2,7 @@
 	<string name="outputName" value="table.png"/>
   <accel type="bvh"/>
 	<sampler type="random">
-		<integer name="sampleCount" value="4096"/>
+		<integer name="sampleCount" value="32"/>
 	</sampler>
 
   <integrator type="path">
@@ -58,10 +58,10 @@
 	<mesh type="obj">
 		<string name="filename" value="meshes/mesh_1.obj"/>
 		<bsdf type="diffuse">
-			<!-- <color3f name="albedo" value=".5,.5,.5"/> -->
-			<texture type="checkerboard_color" name="albedo">
+			<color3f name="albedo" value=".5,.5,.5"/>
+			<!-- <texture type="checkerboard_color" name="albedo">
 				<vector2f name="scale" value="32.0, 32.0"/>
-			</texture>
+			</texture> -->
 		</bsdf>
 		<transform name="toWorld">
 			<scale value="0.2,0.35,0.5"/>
@@ -76,7 +76,8 @@
 			<translate value="-1,0,0"/>
 		</transform>
 		<bsdf type="glass">
-			<float name="eta" value="1.33"/>
+			<float name="extIOR" value="1"/>
+			<float name="intIOR" value="1.33"/>
 		</bsdf>
 	</mesh>
 
@@ -87,7 +88,8 @@
 			<translate value="-1,0,0"/>
 		</transform>
 		<bsdf type="glass">
-			<float name="eta" value="1.5"/>
+			<float name="extIOR" value="1"/>
+			<float name="intIOR" value="1.5"/>
 		</bsdf>
 	</mesh>
 
@@ -98,7 +100,8 @@
 			<translate value="-1,0,0"/>
 		</transform>
 		<bsdf type="glass">
-			<float name="eta" value="0.8867"/>
+			<float name="extIOR" value="1.5"/>
+			<float name="intIOR" value="1.33"/>
 		</bsdf>
 	</mesh>
 </scene>
