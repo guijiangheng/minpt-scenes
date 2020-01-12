@@ -1,0 +1,30 @@
+<scene>
+	<string name="outputName" value="texture.png"/>
+	<accel type="bvh"/>
+	<sampler type="random">
+		<integer name="sampleCount" value="1"/>
+	</sampler>
+	<integrator type="path"/>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/floor.obj"/>
+    <bsdf type="diffuse">
+      <texture type="image_color" name="albedo">
+        <string name="filename" value="textures/20060807_wells6_hd.exr"/>
+      </texture>
+    </bsdf>
+	</mesh>
+
+  <light type="constant_env"/>
+
+	<camera type="perspective">
+		<transform name="toWorld">
+			<lookat target="0, 1, 0"
+							origin="0, 0, 0"
+							up="0, 0, 1"/>
+		</transform>
+		<float name="fov" value="90"/>
+    <bounds2f name="screenWindow" min="-2,-1" max="2,1"/>
+		<vector2i name="outputSize" value="1000, 500"/>
+	</camera>
+</scene>

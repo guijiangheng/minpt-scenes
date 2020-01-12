@@ -1,0 +1,30 @@
+
+Film "image" "integer xresolution" [1000] "integer yresolution" [500]
+  "string filename" "texture.png"
+
+Sampler "random" "integer pixelsamples" [32]
+
+Integrator "path" "integer maxdepth" 20
+
+LookAt 0 0 0  0 -1 0 0 0 1
+Camera "perspective" "float fov" [90]
+
+WorldBegin
+
+AttributeBegin
+Rotate 90 0 0 1
+Rotate -90 1 0 0
+LightSource "infinite" "string mapname"
+    "textures/20060807_wells6_hd.exr"   "color scale" [2.5 2.5 2.5]
+AttributeEnd
+
+AttributeBegin
+Texture "lines" "color" "imagemap" "string filename" "textures/20060807_wells6_hd.exr"
+Material "matte" "texture Kd" "lines"
+Shape "trianglemesh"
+   "point P" [ -2 -1 -1   2 -1 -1   2 -1 1   -2 -1  1 ]
+   "float uv" [ 0 0 1 0 1 1 0 1 ]
+	"integer indices" [ 0 1 2 2 3 0]
+AttributeEnd
+
+WorldEnd
