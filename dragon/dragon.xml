@@ -2,7 +2,7 @@
   <string name="outputName" value="dragon.png"/>
   <accel type="bvh"/>
 	<sampler type="random">
-		<integer name="sampleCount" value="32"/>
+		<integer name="sampleCount" value="64"/>
 	</sampler>
 
   <integrator type="path"/>
@@ -13,37 +13,33 @@
       <string name="filename" value="textures/20060807_wells6_hd.exr"/>
     </texture>
     <transform name="toWorld">
-      <scale value="1,1,-1"/>
-			<rotate axis="1, 0, 0" angle="-90"/>
 			<rotate axis="0, 0, 1" angle="90"/>
+			<rotate axis="1, 0, 0" angle="-90"/>
 		</transform>
   </light>
 
   <mesh type="obj">
     <string name="filename" value="meshes/floor.obj"/>
-    <bsdf type="mirror"/>
-    <!-- <bsdf type="plastic">
-      <float name="eta" value="1.5"/>
-      <color3f name="kd" value="0.1 0.1 0.1"/>
-      <float name="ks" value="0.7"/>
-      <float name="alpha" value="0.1"/>
-		</bsdf> -->
+    <bsdf type="diffuse">
+      <color3f name="albedo" value="0.2 0.2 0.2"/>
+    </bsdf>
+    <transform name="toWorld">
+      <translate value="0 0 -40"/>
+    </transform>
+    <!-- <bsdf type="mirror"/> -->
   </mesh>
 
-	<!-- <mesh type="ply">
+	<mesh type="ply">
 		<string name="filename" value="meshes/dragon_remeshed.ply"/>
     <transform name="toWorld">
 			<rotate axis="0, 1, 0" angle="-53"/>
 		</transform>
-    <bsdf type="diffuse">
-      <color3f name="albedo" value="1.0, 1.0, 1.0"/>
-    </bsdf>
 		<bsdf type="plastic">
-      <float name="eta" value="1.7"/>
+      <float name="eta" value="0.6666"/>
       <color3f name="kd" value="0.1 0.1 0.4"/>
       <float name="alpha" value="0.03"/>
 		</bsdf>
-	</mesh> -->
+	</mesh>
 
 	<camera type="perspective">
 		<transform name="toWorld">
@@ -51,7 +47,7 @@
               origin="277, -240, 250"
               up="0, 0, 1"/>
 		</transform>
-		<float name="fov" value="30"/>
+		<float name="fov" value="33"/>
 		<vector2i name="outputSize" value="800, 800"/>
 	</camera>
 </scene>
