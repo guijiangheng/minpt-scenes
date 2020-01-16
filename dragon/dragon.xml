@@ -7,22 +7,14 @@
 
   <integrator type="path"/>
 
-  <light type="envmap">
-    <texture type="image_color">
-      <float name="scale" value="2.5"/>
-      <string name="filename" value="textures/20060807_wells6_hd.exr"/>
-    </texture>
-    <transform name="toWorld">
-			<rotate axis="0, 0, 1" angle="90"/>
-			<rotate axis="1, 0, 0" angle="-90"/>
-		</transform>
-  </light>
-
   <mesh type="obj">
     <string name="filename" value="meshes/floor.obj"/>
-    <bsdf type="diffuse">
-      <color3f name="albedo" value="0.2 0.2 0.2"/>
-    </bsdf>
+    <bsdf type="plastic">
+      <float name="eta" value="0.6666"/>
+      <color3f name="kd" value="0.1 0.1 0.1"/>
+      <float name="ks" value="0.7"/>
+      <float name="alpha" value="0.1"/>
+		</bsdf>
     <transform name="toWorld">
       <translate value="0 0 -40"/>
     </transform>
@@ -40,6 +32,15 @@
       <float name="alpha" value="0.03"/>
 		</bsdf>
 	</mesh>
+
+  <light type="envmap">
+    <float name="scale" value="2.5"/>
+    <string name="filename" value="textures/20060807_wells6_hd.exr"/>
+    <transform name="toWorld">
+			<rotate axis="0, 0, 1" angle="90"/>
+			<rotate axis="1, 0, 0" angle="-90"/>
+		</transform>
+  </light>
 
 	<camera type="perspective">
 		<transform name="toWorld">
