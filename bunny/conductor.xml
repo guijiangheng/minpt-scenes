@@ -22,9 +22,7 @@
   </sampler>
 
   <light type="envmap">
-    <texture type="image_color">
-      <string name="filename" value="textures/envmap.exr"/>
-    </texture>
+    <string name="filename" value="textures/envmap.exr"/>
     <transform name="toWorld">
 			<rotate axis="1, 0, 0" angle="270"/>
 			<rotate axis="0, 1, 0" angle="90"/>

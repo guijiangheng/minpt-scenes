@@ -10,10 +10,10 @@
   <mesh type="obj">
     <string name="filename" value="meshes/floor.obj"/>
     <bsdf type="plastic">
-      <float name="eta" value="0.6666"/>
+      <float name="eta" value="0.66667"/>
       <color3f name="kd" value="0.1 0.1 0.1"/>
       <float name="ks" value="0.7"/>
-      <float name="alpha" value="0.1"/>
+      <float name="roughness" value="0.1"/>
 		</bsdf>
     <transform name="toWorld">
       <translate value="0 0 -40"/>
@@ -27,9 +27,9 @@
 			<rotate axis="0, 1, 0" angle="-53"/>
 		</transform>
 		<bsdf type="plastic">
-      <float name="eta" value="0.6666"/>
+      <float name="eta" value="0.66667"/>
       <color3f name="kd" value="0.1 0.1 0.4"/>
-      <float name="alpha" value="0.03"/>
+      <float name="roughness" value="0.03"/>
 		</bsdf>
 	</mesh>
 
