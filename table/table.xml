@@ -10,6 +10,7 @@
 	</integrator>
 
 	<camera type="perspective">
+    <filter type="box"/>
 		<transform name="toWorld">
 			<lookat target="31.6866, -67.2776, 36.1392"
 				      origin="32.1259, -68.0505, 36.597"

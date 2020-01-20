@@ -2,13 +2,14 @@
 <scene>
 	<string name="outputName" value="veach.png"/>
 	<accel type="bvh"/>
-	<integrator type="path"/>
+	<integrator type="path_simple"/>
 
 	<sampler type="random">
-		<integer name="sampleCount" value="4096"/>
+		<integer name="sampleCount" value="32"/>
 	</sampler>
 
 	<camera type="perspective">
+    <filter type="box"/>
 		<transform name="toWorld">
 			<lookat origin="0, 6, 27.5" target="0, -1.5, 2.5" up="0, 1, 0"/>
 		</transform>
