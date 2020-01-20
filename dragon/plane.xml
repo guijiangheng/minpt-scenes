@@ -1,0 +1,47 @@
+<scene>
+  <string name="outputName" value="plane-plastic-simple-minpt.png"/>
+  <accel type="bvh"/>
+	<sampler type="random">
+		<integer name="sampleCount" value="256"/>
+	</sampler>
+
+  <integrator type="path_simple">
+    <integer name="maxDepth" value="20"/>
+  </integrator>
+
+  <mesh type="obj">
+    <string name="filename" value="meshes/floor.obj"/>
+    <bsdf type="plastic">
+      <float name="eta" value="0.66667"/>
+      <color3f name="kd" value="0.1 0.1 0.1"/>
+      <float name="ks" value="0.7"/>
+      <float name="roughness" value="0.1"/>
+		</bsdf>
+    <transform name="toWorld">
+      <translate value="0 0 -40"/>
+    </transform>
+    <!-- <bsdf type="mirror"/> -->
+  </mesh>
+
+  <light type="constant_env"/>
+
+  <!-- <light type="envmap">
+    <float name="scale" value="2.5"/>
+    <string name="filename" value="textures/20060807_wells6_hd.exr"/>
+    <transform name="toWorld">
+			<rotate axis="0, 0, 1" angle="90"/>
+			<rotate axis="1, 0, 0" angle="-90"/>
+		</transform>
+  </light> -->
+
+	<camera type="perspective">
+    <filter type="box"/>
+		<transform name="toWorld">
+      <lookat target="0, 60, -30"
+              origin="277, -240, 250"
+              up="0, 0, 1"/>
+		</transform>
+		<float name="fov" value="33"/>
+		<vector2i name="outputSize" value="900, 900"/>
+	</camera>
+</scene>
