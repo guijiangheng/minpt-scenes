@@ -1,12 +1,12 @@
 <scene>
-  <string name="outputName" value="dragon-plastic-minpt.png"/>
+  <string name="outputName" value="f8-14b.png"/>
   <accel type="bvh"/>
 	<sampler type="random">
 		<integer name="sampleCount" value="512"/>
 	</sampler>
 
   <integrator type="path">
-    <integer name="maxDepth" value="20"/>
+    <integer name="maxDepth" value="5"/>
   </integrator>
 
   <mesh type="obj">
@@ -27,11 +27,9 @@
     <transform name="toWorld">
 			<rotate axis="0, 1, 0" angle="-53"/>
 		</transform>
-		<bsdf type="plastic">
-      <float name="eta" value="0.66667"/>
-      <rgb name="kd" value="0.1 0.1 0.4"/>
-      <float name="roughness" value="0.03"/>
-		</bsdf>
+    <bsdf type="diffuse">
+      <rgb name="diffuse" value="0.7 0.7 0.7"/>
+    </bsdf>
 	</mesh>
 
   <light type="envmap">

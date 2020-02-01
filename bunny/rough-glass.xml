@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <scene>
-  <string name="outputName" value="conductor.png"/>
+  <string name="outputName" value="rough-glass-01.png"/>
   <accel type="bvh"/>
   <integrator type="path">
     <integer name="maxDepth" value="50"/>
@@ -32,15 +32,19 @@
 
   <mesh type="obj">
     <string name="filename" value="meshes/bunny2.obj"/>
-    <bsdf type="glass"/>
+    <bsdf type="roughdielectric">
+      <boolean name="remaproughness" value="false"/>
+      <float name="uRoughness" value="0.2"/>
+      <float name="vRoughness" value="0.2"/>
+    </bsdf>
   </mesh>
 
   <mesh type="obj">
     <string name="filename" value="meshes/background.obj"/>
       <bsdf type="diffuse">
         <texture type="checkerboard_color" name="albedo">
-          <rgb name="value1" value="0.2, 0.2, 0.2"/>
-          <rgb name="value2" value="0.4, 0.4, 0.4"/>
+          <color3f name="value1" value="0.2, 0.2, 0.2"/>
+          <color3f name="value2" value="0.4, 0.4, 0.4"/>
           <vector2f name="scale" value="16, 16"/>
         </texture>
     </bsdf>
