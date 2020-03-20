@@ -17,27 +17,27 @@
 	</camera>
 
 	<sampler type="random">
-		<integer name="sampleCount" value="32"/>
+		<integer name="sampleCount" value="512"/>
 	</sampler>
 
 	<mesh type="obj">
 		<string name="filename" value="meshes/walls.obj"/>
 		<bsdf type="diffuse">
-			<color3f name="albedo" value="0.725 0.71 0.68"/>
+			<rgb name="albedo" value="0.725 0.71 0.68"/>
 		</bsdf>
 	</mesh>
 
 	<mesh type="obj">
 		<string name="filename" value="meshes/rightwall.obj"/>
 		<bsdf type="diffuse">
-			<color3f name="albedo" value="0.161 0.133 0.427"/>
+			<rgb name="albedo" value="0.161 0.133 0.427"/>
 		</bsdf>
 	</mesh>
 
 	<mesh type="obj">
 		<string name="filename" value="meshes/leftwall.obj"/>
 		<bsdf type="diffuse">
-			<color3f name="albedo" value="0.630 0.065 0.05"/>
+			<rgb name="albedo" value="0.630 0.065 0.05"/>
 		</bsdf>
 	</mesh>
 
@@ -55,7 +55,7 @@
 		<string name="filename" value="meshes/light.obj"/>
 		<light type="area">
 			<boolean name="twoSided" value="false"/>
-			<color3f name="radiance" value="40 40 40"/>
+			<rgb name="radiance" value="40 40 40"/>
 		</light>
 	</mesh>
 </scene>

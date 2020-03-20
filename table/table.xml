@@ -24,7 +24,7 @@
 	<mesh type="obj">
 		<string name="filename" value="meshes/mesh_1.obj"/>
 		<light type="area">
-			<color3f name="radiance" value="3,3,2.5"/>
+			<rgb name="radiance" value="3,3,2.5"/>
 		</light>
 		<transform name="toWorld">
 			<scale value="0.06,0.06,-1"/>
@@ -35,7 +35,7 @@
 	<mesh type="obj">
 		<string name="filename" value="meshes/mesh_1.obj"/>
 		<light type="area">
-			<color3f name="radiance" value="1,1,1.6"/>
+			<rgb name="radiance" value="1,1,1.6"/>
 		</light>
 		<transform name="toWorld">
 			<scale value="0.3,0.3,-1"/>
@@ -47,7 +47,7 @@
 	<mesh type="obj">
 		<string name="filename" value="meshes/mesh_0.obj"/>
 		<bsdf type="plastic">
-			<color3f name="kd" value="0 0 0"/>
+			<rgb name="kd" value="0 0 0"/>
 			<boolean name="remapRoughness" value="false"/>
 		</bsdf>
 		<transform name="toWorld">
@@ -59,7 +59,7 @@
 	<mesh type="obj">
 		<string name="filename" value="meshes/mesh_1.obj"/>
 		<bsdf type="diffuse">
-			<color3f name="albedo" value=".5,.5,.5"/>
+			<rgb name="albedo" value=".5,.5,.5"/>
 			<!-- <texture type="checkerboard_color" name="albedo">
 				<vector2f name="scale" value="32.0, 32.0"/>
 			</texture> -->

@@ -11,7 +11,7 @@
 		<string name="filename" value="meshes/ajax.obj"/>
 		<bsdf type="plastic">
       <float name="eta" value="1.7"/>
-      <color3f name="kd" value="0.2 0.2 0.4"/>
+      <rgb name="kd" value="0.2 0.2 0.4"/>
       <float name="alpha" value="0.08"/>
       <boolean name="remapRoughness" value="false"/>
       <!-- <float name="alpha" value="0.28"/> -->
@@ -21,7 +21,7 @@
 	<mesh type="obj">
 		<string name="filename" value="meshes/light.obj"/>
 		<light type="area">
-      <color3f name="radiance" value="20 20 20"/>
+      <rgb name="radiance" value="20 20 20"/>
 		</light>
 	</mesh>
 

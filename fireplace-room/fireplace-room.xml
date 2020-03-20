@@ -6,6 +6,7 @@
 	</sampler>
 	<integrator type="ao">
 		<integer name="shadingSamples" value="32"/>
+    <float name="rayLength" value="1.8"/>
 	</integrator>
 
 	<mesh type="obj">

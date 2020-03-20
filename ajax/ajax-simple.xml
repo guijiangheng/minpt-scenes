@@ -8,13 +8,13 @@
 
 	<light type="point">
 		<vector3f name="pLight" value="-20, 40, 20"/>
-		<color3f name="intensity" value="952.4191, 952.4191, 952.4191"/>
+		<rgb name="intensity" value="952.4191, 952.4191, 952.4191"/>
 	</light>
 
 	<mesh type="obj">
 		<string name="filename" value="meshes/ajax.obj"/>
 		<bsdf type="diffuse">
-			<color3f name="albedo" value="1 1 1"/>
+			<rgb name="albedo" value="1 1 1"/>
 		</bsdf>
 	</mesh>
 

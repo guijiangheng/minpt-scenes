@@ -13,7 +13,7 @@
     <string name="filename" value="meshes/floor.obj"/>
     <bsdf type="plastic">
       <float name="eta" value="0.66667"/>
-      <color3f name="kd" value="0.1 0.1 0.1"/>
+      <rgb name="kd" value="0.1 0.1 0.1"/>
       <float name="ks" value="0.7"/>
       <float name="roughness" value="0.1"/>
 		</bsdf>

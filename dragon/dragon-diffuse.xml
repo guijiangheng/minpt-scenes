@@ -12,7 +12,7 @@
   <mesh type="obj">
     <string name="filename" value="meshes/floor.obj"/>
     <bsdf type="diffuse">
-      <color3f name="albedo" value="0.7 0.7 0.7"/>
+      <rgb name="albedo" value="0.7 0.7 0.7"/>
     </bsdf>
     <transform name="toWorld">
       <translate value="0 0 -40"/>
@@ -25,7 +25,7 @@
 			<rotate axis="0, 1, 0" angle="-53"/>
 		</transform>
     <bsdf type="diffuse">
-      <color3f name="albedo" value="0.7 0.7 0.7"/>
+      <rgb name="albedo" value="0.7 0.7 0.7"/>
     </bsdf>
 	</mesh>
 
