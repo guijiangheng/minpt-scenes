@@ -1,0 +1,28 @@
+<scene>
+  <string name="outputName" value="bunny.png" />
+  <accel type="bvh" />
+  <sampler type="random">
+    <integer name="sampleCount" value="32" />
+  </sampler>
+  <integrator type="ao" />
+
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh000.ply" />
+  </mesh>
+
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh001.ply" />
+  </mesh>
+
+  <mesh type="obj">
+    <string name="filename" value="meshes/floor.obj" />
+  </mesh>
+
+  <camera type="perspective">
+    <transform name="toWorld">
+      <matrix value="-0.00550949 -0.342144 -0.939631 23.895 1.07844e-005 0.939646 -0.342149 11.2207 0.999985 -0.00189103 -0.00519335 0.0400773 0 0 0 1" />
+    </transform>
+    <float name="fov" value="35" />
+    <vector2i name="outputSize" value="1280, 720" />
+  </camera>
+</scene>

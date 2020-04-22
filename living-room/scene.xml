@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scene>
+  <string name="outputName" value="living-room.png" />
+  <accel type="bvh" />
+  <integrator type="path">
+    <integer name="maxDepth" value="10" />
+  </integrator>
+
+  <sampler type="random">
+    <integer name="sampleCount" value="512" />
+  </sampler>
+
+  <camera type="perspective">
+    <transform name="toWorld">
+      <matrix value=" 0.264209     0.071763 -0.961792  5.10518
+                     -2.81996e-008 0.997228  0.074407  0.731065
+                      0.964465    -0.019659  0.263476 -2.31789
+                      0 0 0 1" />
+    </transform>
+    <filter type="box" />
+    <float name="fov" value="58.715508" />
+    <vector2i name="outputSize" value="1280, 720" />
+    <bounds2f name="screenWindow" min="-1.7777, -1.0" max="1.7777, 1.0" />
+  </camera>
+
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh038.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh036.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh035.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh041.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh040.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh028.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh022.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh020.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh026.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh018.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh025.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh060.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh032.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh016.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh016.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh015.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh029.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh043.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh033.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh046.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh049.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh039.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh027.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh050.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh052.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh048.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh024.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh054.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh055.ply" />
+  </mesh>
+  <mesh type="ply">
+    <bsdf type="mirror" />
+    <string name="filename" value="meshes/Mesh056.ply" />
+  </mesh>
+  <mesh type="ply">
+    <bsdf type="mirror" />
+    <string name="filename" value="meshes/Mesh045.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh063.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh057.ply" />
+  </mesh>
+  <mesh type="ply">
+    <bsdf type="diffuse">
+      <texture type="image_color" name="albedo">
+        <string name="filename" value="textures/wood.png" />
+      </texture>
+    </bsdf>
+    <string name="filename" value="meshes/Mesh019.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh059.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh042.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh051.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh061.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh047.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh062.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh064.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh014.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh013.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh034.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh021.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh011.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh053.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh010.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh009.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh017.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh058.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh008.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh007.ply" />
+  </mesh>
+  <mesh type="ply">
+    <bsdf type="diffuse">
+      <texture type="image_color" name="albedo">
+        <string name="filename" value="textures/picture8.png" />
+      </texture>
+    </bsdf>
+    <string name="filename" value="meshes/Mesh023.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh006.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh005.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh004.ply" />
+  </mesh>
+  <mesh type="ply">
+    <string name="filename" value="meshes/Mesh003.ply" />
+  </mesh>
+  <mesh type="ply">
+    <transform name="toWorld">
+      <matrix value="1 0 0 0.634815 0 1 0 0 0 0 1 -0.151441 0 0 0 1" />
+    </transform>
+    <string name="filename" value="meshes/Mesh002.ply" />
+  </mesh>
+  <mesh type="ply">
+    <transform name="toWorld">
+      <matrix value="1 0 0 0.634815 0 1 0 0 0 0 1 -0.151441 0 0 0 1" />
+    </transform>
+    <string name="filename" value="meshes/Mesh001.ply" />
+  </mesh>
+  <mesh type="ply">
+    <transform name="toWorld">
+      <matrix value="1 0 0 0.634815 0 1 0 0 0 0 1 -0.195609 0 0 0 1" />
+    </transform>
+    <string name="filename" value="meshes/Mesh030.ply" />
+  </mesh>
+  <mesh type="ply">
+    <transform name="toWorld">
+      <matrix value="1 0 0 0.634815 0 1 0 0 0 0 1 -0.195609 0 0 0 1" />
+    </transform>
+    <string name="filename" value="meshes/Mesh044.ply" />
+  </mesh>
+  <mesh type="ply">
+    <transform name="toWorld">
+      <matrix value="1 0 0 0.634815 0 1 0 0 0 0 1 -0.195609 0 0 0 1" />
+    </transform>
+    <string name="filename" value="meshes/Mesh000.ply" />
+  </mesh>
+  <mesh type="ply">
+    <transform name="toWorld">
+      <matrix value="1 0 0 0.634815 0 1 0 0 0 0 1 -0.195609 0 0 0 1" />
+    </transform>
+    <string name="filename" value="meshes/Mesh037.ply" />
+  </mesh>
+  <mesh type="ply">
+    <transform name="toWorld">
+      <matrix value="1 0 0 0.634815 0 1 0 0 0 0 1 -0.195609 0 0 0 1" />
+    </transform>
+    <string name="filename" value="meshes/Mesh031.ply" />
+    <bsdf type="diffuse">
+      <texture type="image_color" name="albedo">
+        <string name="filename" value="textures/wood5.png" />
+      </texture>
+    </bsdf>
+  </mesh>
+  <light type="constant_env">
+    <rgb name="radiance" value="1.2, 1.2, 1.2" />
+  </light>
+</scene>
